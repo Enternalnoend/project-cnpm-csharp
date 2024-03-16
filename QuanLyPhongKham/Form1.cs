@@ -79,17 +79,7 @@ namespace QuanLyPhongKham
 
         private void cbkShowPassword_CheckedChanged(object sender, EventArgs e)
         {
-            //MessageBox.Show(tbxPassword.PasswordChar.ToString());
-            if (cbkShowPassword.Checked)
-            {
-                tbxPassword.PasswordChar = '\0';
-            }
-            else
-            {
-                tbxPassword.PasswordChar = '*';
-
-            }
-
+            tbxPassword.UseSystemPasswordChar=cbkShowPassword.Checked;
         }
     }
     }
