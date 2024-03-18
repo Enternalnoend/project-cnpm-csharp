@@ -29,9 +29,9 @@ namespace QuanLyPhongKham
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.Button button4;
             System.Windows.Forms.Label label1;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.button4 = new System.Windows.Forms.Button();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -42,35 +42,34 @@ namespace QuanLyPhongKham
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             this.tbxPassword = new System.Windows.Forms.TextBox();
             this.tbxUsername = new System.Windows.Forms.TextBox();
-            button4 = new System.Windows.Forms.Button();
             label1 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // button4
             // 
-            button4.BackColor = System.Drawing.Color.LightSteelBlue;
-            button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            button4.Cursor = System.Windows.Forms.Cursors.SizeNESW;
-            button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            button4.Font = new System.Drawing.Font("Microsoft YaHei UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            button4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            button4.Location = new System.Drawing.Point(89, 282);
-            button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            button4.Name = "button4";
-            button4.Size = new System.Drawing.Size(322, 46);
-            button4.TabIndex = 12;
-            button4.Text = "Đăng nhập";
-            button4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            button4.UseVisualStyleBackColor = false;
-            button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button4.Cursor = System.Windows.Forms.Cursors.SizeNESW;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button4.Font = new System.Drawing.Font("Microsoft YaHei UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button4.Location = new System.Drawing.Point(89, 282);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(322, 46);
+            this.button4.TabIndex = 12;
+            this.button4.Text = "Đăng nhập";
+            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.BackColor = System.Drawing.Color.Transparent;
             label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            label1.Location = new System.Drawing.Point(94, 345);
+            label1.Location = new System.Drawing.Point(86, 343);
             label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             label1.Name = "label1";
             label1.Size = new System.Drawing.Size(157, 17);
@@ -112,12 +111,12 @@ namespace QuanLyPhongKham
             this.panel2.Controls.Add(label1);
             this.panel2.Controls.Add(this.cbkShowPassword);
             this.panel2.Controls.Add(this.linkLabel3);
-            this.panel2.Controls.Add(button4);
+            this.panel2.Controls.Add(this.button4);
             this.panel2.Controls.Add(this.tbxPassword);
             this.panel2.Controls.Add(this.tbxUsername);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(555, 137);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(433, 401);
             this.panel2.TabIndex = 10;
@@ -151,7 +150,7 @@ namespace QuanLyPhongKham
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLabel1.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel1.Location = new System.Drawing.Point(237, 345);
+            this.linkLabel1.Location = new System.Drawing.Point(244, 344);
             this.linkLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(85, 15);
@@ -166,7 +165,7 @@ namespace QuanLyPhongKham
             this.cbkShowPassword.BackColor = System.Drawing.Color.Transparent;
             this.cbkShowPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.cbkShowPassword.Location = new System.Drawing.Point(304, 251);
-            this.cbkShowPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbkShowPassword.Margin = new System.Windows.Forms.Padding(2);
             this.cbkShowPassword.Name = "cbkShowPassword";
             this.cbkShowPassword.Size = new System.Drawing.Size(122, 19);
             this.cbkShowPassword.TabIndex = 14;
@@ -181,7 +180,7 @@ namespace QuanLyPhongKham
             this.linkLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.linkLabel3.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLabel3.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel3.Location = new System.Drawing.Point(328, 347);
+            this.linkLabel3.Location = new System.Drawing.Point(333, 345);
             this.linkLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel3.Name = "linkLabel3";
             this.linkLabel3.Size = new System.Drawing.Size(93, 15);
@@ -193,19 +192,20 @@ namespace QuanLyPhongKham
             // 
             this.tbxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxPassword.Location = new System.Drawing.Point(89, 192);
-            this.tbxPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxPassword.Margin = new System.Windows.Forms.Padding(2);
             this.tbxPassword.Multiline = true;
             this.tbxPassword.Name = "tbxPassword";
+            this.tbxPassword.PasswordChar = '*';
             this.tbxPassword.Size = new System.Drawing.Size(326, 37);
             this.tbxPassword.TabIndex = 11;
-            this.tbxPassword.UseSystemPasswordChar = true;
+            this.tbxPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxPassword_Enter);
             // 
             // tbxUsername
             // 
             this.tbxUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbxUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxUsername.Location = new System.Drawing.Point(89, 115);
-            this.tbxUsername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxUsername.Margin = new System.Windows.Forms.Padding(2);
             this.tbxUsername.Multiline = true;
             this.tbxUsername.Name = "tbxUsername";
             this.tbxUsername.Size = new System.Drawing.Size(325, 37);
@@ -223,7 +223,7 @@ namespace QuanLyPhongKham
             this.Controls.Add(this.linkLabel2);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -245,6 +245,7 @@ namespace QuanLyPhongKham
         private System.Windows.Forms.TextBox tbxUsername;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button4;
     }
 }
 
