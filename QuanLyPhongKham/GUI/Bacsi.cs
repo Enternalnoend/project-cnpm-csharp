@@ -128,5 +128,15 @@ namespace QuanLyPhongKham.GUI
         {
             kls1.BringToFront();
         }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

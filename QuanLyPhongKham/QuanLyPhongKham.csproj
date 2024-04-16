@@ -116,6 +116,12 @@
     <Compile Include="GUI\Lichkham.Designer.cs">
       <DependentUpon>Lichkham.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\LSKCB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\LSKCB.Designer.cs">
+      <DependentUpon>LSKCB.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Thembenhnhan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +150,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Lichkham.resx">
       <DependentUpon>Lichkham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\LSKCB.resx">
+      <DependentUpon>LSKCB.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Thembenhnhan.resx">
       <DependentUpon>Thembenhnhan.cs</DependentUpon>
