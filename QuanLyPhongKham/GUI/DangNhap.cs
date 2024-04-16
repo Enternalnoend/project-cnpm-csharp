@@ -18,7 +18,7 @@ namespace QuanLyPhongKham.GUI
         {
             InitializeComponent();
         }
-
+     
 
 
         #region Event
@@ -50,7 +50,7 @@ namespace QuanLyPhongKham.GUI
             string password = tbxPassword.Text.Trim();
             if (checkLogin(phoneNumber, password)){
                 //this.Hide();
-                MessageBox.Show("Đăng nhập thành công");
+                MessageBox.Show("Chuc mung huynh dat");
             }
             else
             {
@@ -59,6 +59,7 @@ namespace QuanLyPhongKham.GUI
             }
             tbxPassword.Text = "";
         }
+        
         #endregion
 
 
@@ -68,5 +69,81 @@ namespace QuanLyPhongKham.GUI
         }
 
         #endregion
+
+        private void lblDontHaveAccount_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblHeader_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pnlContainer_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbxPhoneNumber_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbxPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblPassword_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void jText_Box1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblForgetPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Bacsi bs = new Bacsi();
+            bs.Show();
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

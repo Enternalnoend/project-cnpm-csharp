@@ -109,3 +109,23 @@ D:\duytruong\C#\Project\project-cnpm-main-myself\QuanLyPhongKham\obj\Debug\QuanL
 D:\duytruong\C#\Project\project-cnpm-main-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.csproj.CoreCompileInputs.cache
 D:\duytruong\C#\Project\project-cnpm-main-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.exe
 D:\duytruong\C#\Project\project-cnpm-main-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.pdb
+D:\STUDYZONE\Congnghephanmem\Đồ án môn học\project-cnpm-csharp\QuanLyPhongKham\bin\Debug\DBQuanLyPhongKham.mdf
+D:\STUDYZONE\Congnghephanmem\Đồ án môn học\project-cnpm-csharp\QuanLyPhongKham\bin\Debug\DBQuanLyPhongKham_log.ldf
+D:\STUDYZONE\Congnghephanmem\Đồ án môn học\project-cnpm-csharp\QuanLyPhongKham\bin\Debug\QuanLyPhongKham.exe.config
+D:\STUDYZONE\Congnghephanmem\Đồ án môn học\project-cnpm-csharp\QuanLyPhongKham\bin\Debug\QuanLyPhongKham.exe
+D:\STUDYZONE\Congnghephanmem\Đồ án môn học\project-cnpm-csharp\QuanLyPhongKham\bin\Debug\QuanLyPhongKham.pdb
+D:\STUDYZONE\Congnghephanmem\Đồ án môn học\project-cnpm-csharp\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.csproj.AssemblyReference.cache
+D:\STUDYZONE\Congnghephanmem\Đồ án môn học\project-cnpm-csharp\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.DangKy.resources
+D:\STUDYZONE\Congnghephanmem\Đồ án môn học\project-cnpm-csharp\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.DangNhap.resources
+D:\STUDYZONE\Congnghephanmem\Đồ án môn học\project-cnpm-csharp\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.Properties.Resources.resources
+D:\STUDYZONE\Congnghephanmem\Đồ án môn học\project-cnpm-csharp\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.csproj.GenerateResource.cache
+D:\STUDYZONE\Congnghephanmem\Đồ án môn học\project-cnpm-csharp\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.csproj.CoreCompileInputs.cache
+D:\STUDYZONE\Congnghephanmem\Đồ án môn học\project-cnpm-csharp\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.exe
+D:\STUDYZONE\Congnghephanmem\Đồ án môn học\project-cnpm-csharp\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.pdb
+D:\STUDYZONE\Congnghephanmem\Đồ án môn học\project-cnpm-csharp\QuanLyPhongKham\bin\Debug\JTextBox.dll
+D:\STUDYZONE\Congnghephanmem\Đồ án môn học\project-cnpm-csharp\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.csproj.CopyComplete
+D:\STUDYZONE\Congnghephanmem\Đồ án môn học\project-cnpm-csharp\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.Bacsi.resources
+D:\STUDYZONE\Congnghephanmem\Đồ án môn học\project-cnpm-csharp\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.Thembenhnhan.resources
+D:\STUDYZONE\Congnghephanmem\Đồ án môn học\project-cnpm-csharp\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.DVdk.resources
+D:\STUDYZONE\Congnghephanmem\Đồ án môn học\project-cnpm-csharp\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.donthuoc.resources
+D:\STUDYZONE\Congnghephanmem\Đồ án môn học\project-cnpm-csharp\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.kls.resources
