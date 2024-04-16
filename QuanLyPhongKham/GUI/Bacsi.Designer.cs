@@ -29,17 +29,10 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -72,16 +65,24 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.panel8 = new System.Windows.Forms.Panel();
             this.dVdk1 = new QuanLyPhongKham.GUI.DVdk();
             this.donthuoc1 = new QuanLyPhongKham.GUI.donthuoc();
             this.kls1 = new QuanLyPhongKham.GUI.kls();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
@@ -96,6 +97,15 @@
             this.panel1.Size = new System.Drawing.Size(1924, 47);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // panel8
+            // 
+            this.panel8.BackgroundImage = global::QuanLyPhongKham.Properties.Resources.N9_NiceNight__1_;
+            this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel8.Location = new System.Drawing.Point(1876, 0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(48, 47);
+            this.panel8.TabIndex = 1;
             // 
             // label1
             // 
@@ -123,14 +133,6 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.LightGray;
-            this.panel5.Controls.Add(this.textBox3);
-            this.panel5.Controls.Add(this.textBox2);
-            this.panel5.Controls.Add(this.textBox8);
-            this.panel5.Controls.Add(this.textBox7);
-            this.panel5.Controls.Add(this.textBox6);
-            this.panel5.Controls.Add(this.textBox5);
-            this.panel5.Controls.Add(this.textBox4);
-            this.panel5.Controls.Add(this.textBox1);
             this.panel5.Controls.Add(this.label6);
             this.panel5.Controls.Add(this.label5);
             this.panel5.Controls.Add(this.label11);
@@ -143,70 +145,6 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1352, 174);
             this.panel5.TabIndex = 3;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(129, 121);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(537, 28);
-            this.textBox3.TabIndex = 3;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(129, 74);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(537, 28);
-            this.textBox2.TabIndex = 3;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(1077, 74);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(266, 28);
-            this.textBox8.TabIndex = 3;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(787, 121);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(556, 28);
-            this.textBox7.TabIndex = 3;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(787, 74);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(169, 28);
-            this.textBox6.TabIndex = 3;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(787, 26);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(169, 28);
-            this.textBox5.TabIndex = 3;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(561, 26);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(105, 28);
-            this.textBox4.TabIndex = 3;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(129, 26);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(327, 28);
-            this.textBox1.TabIndex = 3;
             // 
             // label6
             // 
@@ -377,6 +315,14 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.Controls.Add(this.label16);
+            this.panel6.Controls.Add(this.label15);
+            this.panel6.Controls.Add(this.label14);
+            this.panel6.Controls.Add(this.label20);
+            this.panel6.Controls.Add(this.label19);
+            this.panel6.Controls.Add(this.label18);
+            this.panel6.Controls.Add(this.label17);
+            this.panel6.Controls.Add(this.label13);
             this.panel6.Location = new System.Drawing.Point(566, 307);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1358, 174);
@@ -572,15 +518,6 @@
             this.groupBox3.TabIndex = 7;
             this.groupBox3.TabStop = false;
             // 
-            // panel8
-            // 
-            this.panel8.BackgroundImage = global::QuanLyPhongKham.Properties.Resources.N9_NiceNight__1_;
-            this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel8.Location = new System.Drawing.Point(1876, 0);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(48, 47);
-            this.panel8.TabIndex = 1;
-            // 
             // dVdk1
             // 
             this.dVdk1.BackColor = System.Drawing.Color.LightGray;
@@ -602,6 +539,102 @@
             this.kls1.Name = "kls1";
             this.kls1.Size = new System.Drawing.Size(1674, 437);
             this.kls1.TabIndex = 10;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label13.Location = new System.Drawing.Point(17, 15);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(93, 28);
+            this.label13.TabIndex = 2;
+            this.label13.Text = "Số hồ sơ";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label13.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label14.Location = new System.Drawing.Point(17, 52);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(107, 28);
+            this.label14.TabIndex = 2;
+            this.label14.Text = "Tình trạng";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label14.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label15.Location = new System.Drawing.Point(17, 93);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(129, 28);
+            this.label15.TabIndex = 2;
+            this.label15.Text = "Phòng khám";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label15.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label16.Location = new System.Drawing.Point(17, 132);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(84, 28);
+            this.label16.TabIndex = 2;
+            this.label16.Text = "Ghi chú";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label16.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label17.Location = new System.Drawing.Point(868, 15);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(111, 28);
+            this.label17.TabIndex = 2;
+            this.label17.Text = "Tiền khám";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label17.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label18.Location = new System.Drawing.Point(868, 52);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(94, 28);
+            this.label18.TabIndex = 2;
+            this.label18.Text = "Ngày lập";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label18.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label19.Location = new System.Drawing.Point(732, 93);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(154, 28);
+            this.label19.TabIndex = 2;
+            this.label19.Text = "Lễ tân tiếp đón";
+            this.label19.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label19.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label20.Location = new System.Drawing.Point(732, 132);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(124, 28);
+            this.label20.TabIndex = 2;
+            this.label20.Text = "Bác sĩ khám";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label20.Click += new System.EventHandler(this.label4_Click);
             // 
             // Bacsi
             // 
@@ -632,6 +665,8 @@
             this.panel7.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -659,14 +694,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -688,5 +715,13 @@
         private donthuoc donthuoc1;
         private DVdk dVdk1;
         private kls kls1;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
     }
 }
