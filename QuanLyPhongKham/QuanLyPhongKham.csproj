@@ -110,6 +110,12 @@
     <Compile Include="GUI\kls.Designer.cs">
       <DependentUpon>kls.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Letan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Letan.Designer.cs">
+      <DependentUpon>Letan.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Lichkham.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,6 +153,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\kls.resx">
       <DependentUpon>kls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Letan.resx">
+      <DependentUpon>Letan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Lichkham.resx">
       <DependentUpon>Lichkham.cs</DependentUpon>

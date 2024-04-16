@@ -130,3 +130,5 @@ D:\STUDYZONE\Congnghephanmem\Đồ án môn học\project-cnpm-csharp\QuanLyPhon
 D:\STUDYZONE\Congnghephanmem\Đồ án môn học\project-cnpm-csharp\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.donthuoc.resources
 D:\STUDYZONE\Congnghephanmem\Đồ án môn học\project-cnpm-csharp\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.kls.resources
 D:\STUDYZONE\Congnghephanmem\Đồ án môn học\project-cnpm-csharp\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.Lichkham.resources
+D:\STUDYZONE\Congnghephanmem\Đồ án môn học\project-cnpm-csharp\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.Letan.resources
+D:\STUDYZONE\Congnghephanmem\Đồ án môn học\project-cnpm-csharp\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.LSKCB.resources
