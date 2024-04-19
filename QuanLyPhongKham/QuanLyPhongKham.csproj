@@ -80,6 +80,18 @@
     <Compile Include="GUI\Bacsi.Designer.cs">
       <DependentUpon>Bacsi.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Baocaocv.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Baocaocv.Designer.cs">
+      <DependentUpon>Baocaocv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\BCTH.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\BCTH.Designer.cs">
+      <DependentUpon>BCTH.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\DangKy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +140,30 @@
     <Compile Include="GUI\LSKCB.Designer.cs">
       <DependentUpon>LSKCB.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\QLBG.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\QLBG.Designer.cs">
+      <DependentUpon>QLBG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Quanli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Quanli.Designer.cs">
+      <DependentUpon>Quanli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QuanLiHosobenhnhan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\QuanLiHosobenhnhan.Designer.cs">
+      <DependentUpon>QuanLiHosobenhnhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Thanhtoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Thanhtoan.Designer.cs">
+      <DependentUpon>Thanhtoan.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Thembenhnhan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +174,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\Bacsi.resx">
       <DependentUpon>Bacsi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Baocaocv.resx">
+      <DependentUpon>Baocaocv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\BCTH.resx">
+      <DependentUpon>BCTH.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\DangKy.resx">
       <DependentUpon>DangKy.cs</DependentUpon>
@@ -162,6 +204,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\LSKCB.resx">
       <DependentUpon>LSKCB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QLBG.resx">
+      <DependentUpon>QLBG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Quanli.resx">
+      <DependentUpon>Quanli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QuanLiHosobenhnhan.resx">
+      <DependentUpon>QuanLiHosobenhnhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Thanhtoan.resx">
+      <DependentUpon>Thanhtoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Thembenhnhan.resx">
       <DependentUpon>Thembenhnhan.cs</DependentUpon>

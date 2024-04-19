@@ -17,7 +17,7 @@ namespace QuanLyPhongKham
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Letan());
+            Application.Run(new Quanli());
         }
     }
 }

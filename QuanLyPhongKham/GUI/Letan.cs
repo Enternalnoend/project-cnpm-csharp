@@ -37,25 +37,15 @@ namespace QuanLyPhongKham.GUI
 
         }
 
-        private void Letan_Load(object sender, EventArgs e)
-        {
-            panel12.Size = panel12.MinimumSize;
-        }
+    
 
         private void panel12_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void button31_Click(object sender, EventArgs e)
-        {
-            panel12.Size = panel12.MinimumSize;
-        }
-
-        private void button31_MouseHover(object sender, EventArgs e)
-        {
-            panel12.Size = panel12.MaximumSize;
-        }
+     
+     
 
         private void button35_Click(object sender, EventArgs e)
         {
@@ -67,6 +57,11 @@ namespace QuanLyPhongKham.GUI
         {
             Thembenhnhan thembenhnhan = new Thembenhnhan();
             thembenhnhan.Show();
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
