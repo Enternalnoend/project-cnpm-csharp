@@ -29,39 +29,23 @@ namespace QuanLyPhongKham.GUI
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.Label lblDontHaveAccount;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DangNhap));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dbQuanLyPhongKhamDataSet1 = new QuanLyPhongKham.DBQuanLyPhongKhamDataSet();
-            this.dbQuanLyPhongKhamDataSet2 = new QuanLyPhongKham.DBQuanLyPhongKhamDataSet();
+            this.dbQuanLyPhongKhamDataSet1 = new QuanLyPhongKham.DatabaseDataSet();
+            this.dbQuanLyPhongKhamDataSet2 = new QuanLyPhongKham.DatabaseDataSet();
             this.tbxPhoneNumber = new System.Windows.Forms.TextBox();
             this.tbxPassword = new System.Windows.Forms.TextBox();
             this.btnDangNhap = new System.Windows.Forms.Button();
             this.lblForgetPassword = new System.Windows.Forms.LinkLabel();
             this.cbkShowPassword = new System.Windows.Forms.CheckBox();
-            this.lblCreateAccount = new System.Windows.Forms.LinkLabel();
             this.lblPassword = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlContainer = new System.Windows.Forms.Panel();
-            lblDontHaveAccount = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dbQuanLyPhongKhamDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dbQuanLyPhongKhamDataSet2)).BeginInit();
             this.pnlContainer.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // lblDontHaveAccount
-            // 
-            lblDontHaveAccount.AutoSize = true;
-            lblDontHaveAccount.BackColor = System.Drawing.Color.Transparent;
-            lblDontHaveAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            lblDontHaveAccount.ForeColor = System.Drawing.Color.White;
-            lblDontHaveAccount.Location = new System.Drawing.Point(818, 293);
-            lblDontHaveAccount.Name = "lblDontHaveAccount";
-            lblDontHaveAccount.Size = new System.Drawing.Size(184, 20);
-            lblDontHaveAccount.TabIndex = 15;
-            lblDontHaveAccount.Text = "Bạn chưa có tài khoản?";
-            lblDontHaveAccount.Click += new System.EventHandler(this.lblDontHaveAccount_Click);
             // 
             // panel1
             // 
@@ -73,16 +57,15 @@ namespace QuanLyPhongKham.GUI
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(308, 85);
             this.panel1.TabIndex = 11;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // dbQuanLyPhongKhamDataSet1
             // 
-            this.dbQuanLyPhongKhamDataSet1.DataSetName = "DBQuanLyPhongKhamDataSet";
+            this.dbQuanLyPhongKhamDataSet1.DataSetName = "DatabaseDataSet";
             this.dbQuanLyPhongKhamDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // dbQuanLyPhongKhamDataSet2
             // 
-            this.dbQuanLyPhongKhamDataSet2.DataSetName = "DBQuanLyPhongKhamDataSet";
+            this.dbQuanLyPhongKhamDataSet2.DataSetName = "DatabaseDataSet";
             this.dbQuanLyPhongKhamDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tbxPhoneNumber
@@ -99,7 +82,6 @@ namespace QuanLyPhongKham.GUI
             this.tbxPhoneNumber.Size = new System.Drawing.Size(397, 55);
             this.tbxPhoneNumber.TabIndex = 10;
             this.tbxPhoneNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.tbxPhoneNumber.TextChanged += new System.EventHandler(this.tbxPhoneNumber_TextChanged);
             // 
             // tbxPassword
             // 
@@ -110,11 +92,10 @@ namespace QuanLyPhongKham.GUI
             this.tbxPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxPassword.Multiline = true;
             this.tbxPassword.Name = "tbxPassword";
-            this.tbxPassword.PasswordChar = '*';
+            this.tbxPassword.PasswordChar = '●';
             this.tbxPassword.ShortcutsEnabled = false;
             this.tbxPassword.Size = new System.Drawing.Size(397, 53);
             this.tbxPassword.TabIndex = 11;
-            this.tbxPassword.TextChanged += new System.EventHandler(this.tbxPassword_TextChanged);
             this.tbxPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxPassword_Enter);
             // 
             // btnDangNhap
@@ -142,12 +123,12 @@ namespace QuanLyPhongKham.GUI
             this.lblForgetPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblForgetPassword.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.lblForgetPassword.LinkColor = System.Drawing.Color.Transparent;
-            this.lblForgetPassword.Location = new System.Drawing.Point(1092, 402);
+            this.lblForgetPassword.Location = new System.Drawing.Point(819, 256);
             this.lblForgetPassword.Name = "lblForgetPassword";
-            this.lblForgetPassword.Size = new System.Drawing.Size(111, 18);
+            this.lblForgetPassword.Size = new System.Drawing.Size(123, 18);
             this.lblForgetPassword.TabIndex = 13;
             this.lblForgetPassword.TabStop = true;
-            this.lblForgetPassword.Text = "Quên Mật Khẩu";
+            this.lblForgetPassword.Text = "Quên Mật Khẩu ?";
             this.lblForgetPassword.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblForgetPassword_LinkClicked);
             // 
             // cbkShowPassword
@@ -165,23 +146,6 @@ namespace QuanLyPhongKham.GUI
             this.cbkShowPassword.UseVisualStyleBackColor = false;
             this.cbkShowPassword.CheckedChanged += new System.EventHandler(this.cbkShowPassword_CheckedChanged);
             // 
-            // lblCreateAccount
-            // 
-            this.lblCreateAccount.ActiveLinkColor = System.Drawing.Color.White;
-            this.lblCreateAccount.AutoSize = true;
-            this.lblCreateAccount.BackColor = System.Drawing.Color.Transparent;
-            this.lblCreateAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblCreateAccount.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblCreateAccount.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.lblCreateAccount.LinkColor = System.Drawing.Color.Transparent;
-            this.lblCreateAccount.Location = new System.Drawing.Point(1024, 294);
-            this.lblCreateAccount.Name = "lblCreateAccount";
-            this.lblCreateAccount.Size = new System.Drawing.Size(103, 18);
-            this.lblCreateAccount.TabIndex = 16;
-            this.lblCreateAccount.TabStop = true;
-            this.lblCreateAccount.Text = "Tạo Tài khoản";
-            this.lblCreateAccount.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
@@ -192,7 +156,6 @@ namespace QuanLyPhongKham.GUI
             this.lblPassword.Size = new System.Drawing.Size(123, 35);
             this.lblPassword.TabIndex = 18;
             this.lblPassword.Text = "Mật khẩu";
-            this.lblPassword.Click += new System.EventHandler(this.lblPassword_Click);
             // 
             // panel2
             // 
@@ -202,7 +165,6 @@ namespace QuanLyPhongKham.GUI
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(753, 499);
             this.panel2.TabIndex = 19;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // label1
             // 
@@ -214,7 +176,6 @@ namespace QuanLyPhongKham.GUI
             this.label1.Size = new System.Drawing.Size(163, 35);
             this.label1.TabIndex = 22;
             this.label1.Text = "Số điện thoại";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // pnlContainer
             // 
@@ -222,8 +183,6 @@ namespace QuanLyPhongKham.GUI
             this.pnlContainer.Controls.Add(this.label1);
             this.pnlContainer.Controls.Add(this.panel2);
             this.pnlContainer.Controls.Add(this.lblPassword);
-            this.pnlContainer.Controls.Add(this.lblCreateAccount);
-            this.pnlContainer.Controls.Add(lblDontHaveAccount);
             this.pnlContainer.Controls.Add(this.cbkShowPassword);
             this.pnlContainer.Controls.Add(this.lblForgetPassword);
             this.pnlContainer.Controls.Add(this.btnDangNhap);
@@ -237,7 +196,6 @@ namespace QuanLyPhongKham.GUI
             this.pnlContainer.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.pnlContainer.Size = new System.Drawing.Size(1267, 493);
             this.pnlContainer.TabIndex = 10;
-            this.pnlContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlContainer_Paint);
             // 
             // DangNhap
             // 
@@ -252,7 +210,7 @@ namespace QuanLyPhongKham.GUI
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "DangNhap";
-            this.Text = "Form1";
+            this.Text = "Login";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dbQuanLyPhongKhamDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dbQuanLyPhongKhamDataSet2)).EndInit();
@@ -265,14 +223,13 @@ namespace QuanLyPhongKham.GUI
 
         #endregion
         protected System.Windows.Forms.Panel panel1;
-        private DBQuanLyPhongKhamDataSet dbQuanLyPhongKhamDataSet1;
-        private DBQuanLyPhongKhamDataSet dbQuanLyPhongKhamDataSet2;
+        private DatabaseDataSet dbQuanLyPhongKhamDataSet1;
+        private DatabaseDataSet dbQuanLyPhongKhamDataSet2;
         private System.Windows.Forms.TextBox tbxPhoneNumber;
         private System.Windows.Forms.TextBox tbxPassword;
         private System.Windows.Forms.Button btnDangNhap;
         private System.Windows.Forms.LinkLabel lblForgetPassword;
         private System.Windows.Forms.CheckBox cbkShowPassword;
-        private System.Windows.Forms.LinkLabel lblCreateAccount;
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;

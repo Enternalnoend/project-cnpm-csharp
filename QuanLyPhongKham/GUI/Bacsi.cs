@@ -1,4 +1,6 @@
-﻿using System;
+﻿using QuanLyPhongKham.BLL;
+using QuanLyPhongKham.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,112 +12,22 @@ using System.Windows.Forms;
 
 namespace QuanLyPhongKham.GUI
 {
-    public partial class Bacsi : Form
+    public partial class BacSi : Form
     {
-        public Bacsi()
+        public BacSi()
         {
             InitializeComponent();
             kls1.BringToFront();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Bacsi_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel9_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox10_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            dVdk1.BringToFront();
-        }
-
-        private void label15_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button14_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label18_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label17_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label14_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dVdk1_Load(object sender, EventArgs e)
-        {
-
+        private void Bacsi_Load( object sender, EventArgs e ) {
+            List<PatientDTO> patientList = BacSiBLL.getAllPatients();
+            foreach(PatientDTO item in patientList) {
+                ListViewItem lvwItem = new ListViewItem(item.ID.ToString());
+                lvwItem.SubItems.Add(item.Name);
+                lvwItem.SubItems.Add(item.PhoneNumber);
+                lvwPatient.Items.Add(lvwItem);
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -129,14 +41,12 @@ namespace QuanLyPhongKham.GUI
             kls1.BringToFront();
         }
 
-        private void button18_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button22_Click(object sender, EventArgs e)
-        {
-
+        private void lvwPatient_ItemChecked( object sender, ItemCheckedEventArgs e ) {
+            var selectedTags = lvwPatient.CheckedItems.Cast<ListViewItem>().Select(x => x.Tag);
+            foreach (var tag in selectedTags) {
+                MessageBox.Show(tag.ToString());
+                // do some operation using tag
+            }
         }
     }
 }

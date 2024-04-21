@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLyPhongKham.GUI
 {
-    public partial class Thembenhnhan : Form
+    public partial class ThemBenhNhan : Form
     {
-        public Thembenhnhan()
+        public ThemBenhNhan()
         {
             InitializeComponent();
         }
@@ -27,8 +27,7 @@ namespace QuanLyPhongKham.GUI
 
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
+        private void ThemBenhNhan_Load( object sender, EventArgs e ) {
 
         }
     }

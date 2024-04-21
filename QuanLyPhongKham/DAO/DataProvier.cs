@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -11,14 +12,15 @@ namespace QuanLyPhongKham.DAO
 {
     public class DataProvier
     {
-        //private string db = System.Configuration.ConfigurationManager.ConnectionStrings["DBQuanLyPhongKhamConnectionString"].ConnectionString;
-        private string db = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\DBQuanLyPhongKham.mdf;Integrated Security=True";
+
+        //private string db = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\DBQuanLyPhongKham.mdf;Integrated Security=True";
+        private string db = System.Configuration.ConfigurationManager.ConnectionStrings["connectionString"].ConnectionString;
         private static DataProvier instance;
 
         public static DataProvier Instance
         {
             get
-            {
+            {   
                 if (instance == null)
                     instance = new DataProvier();
                 return instance;
@@ -28,7 +30,7 @@ namespace QuanLyPhongKham.DAO
         }
 
         private DataProvier() { }
-        public int ExecuteNonQuery(string query, string[] paramater = null)
+        public int ExecuteNonQuery(string query, object[] paramater = null)
         {
             int data = 0;
             using (SqlConnection connection = new SqlConnection(db))
@@ -52,11 +54,12 @@ namespace QuanLyPhongKham.DAO
             }
             return data;
         }
-        public int ExecuteScalar(string query, string[] paramater = null)
+        public object ExecuteScalar(string query, object[] paramater = null)
         {
-            int data = 0;
+            object data = 0;
             using (SqlConnection connection = new SqlConnection(db))
             {
+                
                 connection.Open();
                 SqlCommand command = new SqlCommand(query, connection);
                 if (paramater != null)
@@ -71,12 +74,12 @@ namespace QuanLyPhongKham.DAO
                         }
                     }
                 }
-                data = (int)command.ExecuteScalar();
+                data = command.ExecuteScalar();
                 connection.Close();
             }
             return data;
         }
-        public DataTable ExecuteQuery(string query, string[] paramater = null)
+        public DataTable ExecuteQuery(string query, object[] paramater = null)
         {
             DataTable table = new DataTable();
             using (SqlConnection connection = new SqlConnection(db))

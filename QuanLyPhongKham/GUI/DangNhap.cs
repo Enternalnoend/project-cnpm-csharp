@@ -1,4 +1,5 @@
-﻿using QuanLyPhongKham.DAO;
+﻿using QuanLyPhongKham.BLL;
+using QuanLyPhongKham.DAO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,140 +11,67 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QuanLyPhongKham.GUI
-{
-    public partial class DangNhap : Form
-    {
-        public DangNhap()
-        {
+namespace QuanLyPhongKham.GUI {
+    public partial class DangNhap : Form {
+        public DangNhap() {
             InitializeComponent();
         }
-     
+
 
 
         #region Event
-        private void Form1_Load(object sender, EventArgs e)
-        {
+        private void Form1_Load( object sender, EventArgs e ) {
 
         }
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            DangKy dk = new DangKy();
-            dk.Show();
-        }
 
-        private void cbkShowPassword_CheckedChanged(object sender, EventArgs e)
-        {
+        private void cbkShowPassword_CheckedChanged( object sender, EventArgs e ) {
             tbxPassword.UseSystemPasswordChar = cbkShowPassword.Checked;
         }
-        private void tbxPassword_Enter(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == (char)Keys.Enter)
-            {
+        private void tbxPassword_Enter( object sender, KeyPressEventArgs e ) {
+            if (e.KeyChar == (char) Keys.Enter) {
                 btnLogin_Click(sender, e);
             }
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
-        {
+        private void btnLogin_Click( object sender, EventArgs e ) {
             string phoneNumber = tbxPhoneNumber.Text.Trim();
             string password = tbxPassword.Text.Trim();
-            if (checkLogin(phoneNumber, password)){
-                //this.Hide();
-                MessageBox.Show("Chuc mung huynh dat");
-            }
-            else
-            {
-                MessageBox.Show("Tài khoản hoặc mật khẩu không chính xác");
-
+            switch (EmployeeBLL.checkLoginBLL(phoneNumber, password)) {
+                case "BÁC SĨ":
+                    BacSi bacsi = new BacSi();
+                    this.Hide();
+                    bacsi.ShowDialog();
+                    this.Show();
+                    break;
+                case "LỄ TÂN":
+                    LeTan letan = new LeTan();
+                    this.Hide();
+                    letan.ShowDialog();
+                    this.Show();
+                    break;
+                case "QUẢN LÝ":
+                    MessageBox.Show("Tính năng đang trong quá trình phát triển");
+                    break;
+                default:
+                    MessageBox.Show("Tài khoản hoặc mật khẩu không chính xác","Đăng nhập không thành công", MessageBoxButtons.OK);
+                    break;
             }
             tbxPassword.Text = "";
+            tbxPhoneNumber.Text = "";
         }
-        
+        private void lblForgetPassword_LinkClicked( object sender, LinkLabelLinkClickedEventArgs e ) {
+            //BacSi bs = new BacSi();
+            //bs.Show();
+        }
+
         #endregion
 
 
         #region method
-        private Boolean checkLogin(string phoneNumber, string password) {
-            return EmployeeDAO.Instance.checkLogin(phoneNumber, password);
-        }
-
         #endregion
 
-        private void lblDontHaveAccount_Click(object sender, EventArgs e)
-        {
 
-        }
 
-        private void lblHeader_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pnlContainer_Paint(object sender, PaintEventArgs e)
-        {
-            
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbxPhoneNumber_TextChanged(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbxPassword_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void lblPassword_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void jText_Box1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblForgetPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            Bacsi bs = new Bacsi();
-            bs.Show();
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }
