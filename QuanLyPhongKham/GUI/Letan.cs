@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLyPhongKham.GUI
 {
-    public partial class Letan : Form
+    public partial class LeTan : Form
     {
-        public Letan()
+        public LeTan()
         {
             InitializeComponent();
         }
@@ -49,19 +49,24 @@ namespace QuanLyPhongKham.GUI
 
         private void button35_Click(object sender, EventArgs e)
         {
-            Lichkham lichkham = new Lichkham();
-            lichkham.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Thembenhnhan thembenhnhan = new Thembenhnhan();
-            thembenhnhan.Show();
         }
 
         private void button17_Click(object sender, EventArgs e)
         {
 
+        }
+
+
+        private void Letan_Load( object sender, EventArgs e ) {
+
+        }
+
+        private void btnLogout_Click( object sender, EventArgs e ) {
+            this.Close();
         }
     }
 }

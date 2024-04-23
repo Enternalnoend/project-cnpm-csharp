@@ -48,11 +48,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="JTextBox">
-      <HintPath>C:\Users\nguye\Downloads\JTextBox.dll</HintPath>
-    </Reference>
     <Reference Include="System">
-      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
     </Reference>
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -67,30 +64,38 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DAO\DataProvier.cs" />
+    <Compile Include="BLL\BacSiBLL.cs" />
+    <Compile Include="BLL\EmployeeBLL.cs" />
+    <Compile Include="BLL\LeTanBLL.cs" />
+    <Compile Include="DAO\AttendanceDAO.cs" />
+    <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\EmployeeDAO.cs" />
-    <Compile Include="DBQuanLyPhongKhamDataSet.Designer.cs">
+    <Compile Include="DAO\PatientDAO.cs" />
+    <Compile Include="DAO\PositionDAO.cs" />
+    <Compile Include="DatabaseDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DBQuanLyPhongKhamDataSet.xsd</DependentUpon>
+      <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Bacsi.cs">
+    <Compile Include="DTO\EmployeeDTO.cs" />
+    <Compile Include="DTO\PatientDTO.cs" />
+    <Compile Include="GUI\BacSi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\Bacsi.Designer.cs">
-      <DependentUpon>Bacsi.cs</DependentUpon>
+    <Compile Include="GUI\BacSi.Designer.cs">
+      <DependentUpon>BacSi.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Baocaocv.cs">
+    <Compile Include="GUI\BaoCaoCongViec.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\Baocaocv.Designer.cs">
-      <DependentUpon>Baocaocv.cs</DependentUpon>
+    <Compile Include="GUI\BaoCaoCongViec.Designer.cs">
+      <DependentUpon>BaoCaoCongViec.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\BCTH.cs">
+    <Compile Include="GUI\BaoCaoTongHop.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\BCTH.Designer.cs">
-      <DependentUpon>BCTH.cs</DependentUpon>
+    <Compile Include="GUI\BaoCaoTongHop.Designer.cs">
+      <DependentUpon>BaoCaoTongHop.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\DangKy.cs">
       <SubType>Form</SubType>
@@ -104,82 +109,82 @@
     <Compile Include="GUI\DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\donthuoc.cs">
+    <Compile Include="GUI\DonThuoc.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\donthuoc.Designer.cs">
-      <DependentUpon>donthuoc.cs</DependentUpon>
+    <Compile Include="GUI\DonThuoc.Designer.cs">
+      <DependentUpon>DonThuoc.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\DVdk.cs">
+    <Compile Include="GUI\DichVuDaKe.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\DVdk.Designer.cs">
-      <DependentUpon>DVdk.cs</DependentUpon>
+    <Compile Include="GUI\DichVuDaKe.Designer.cs">
+      <DependentUpon>DichVuDaKe.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\kls.cs">
+    <Compile Include="GUI\DuLieuDiemDanh.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\kls.Designer.cs">
-      <DependentUpon>kls.cs</DependentUpon>
+    <Compile Include="GUI\DuLieuDiemDanh.Designer.cs">
+      <DependentUpon>DuLieuDiemDanh.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Letan.cs">
+    <Compile Include="GUI\KhamLamSang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\KhamLamSang.Designer.cs">
+      <DependentUpon>KhamLamSang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\LeTan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\Letan.Designer.cs">
-      <DependentUpon>Letan.cs</DependentUpon>
+    <Compile Include="GUI\LeTan.Designer.cs">
+      <DependentUpon>LeTan.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Lichkham.cs">
+    <Compile Include="GUI\LichKham.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\Lichkham.Designer.cs">
-      <DependentUpon>Lichkham.cs</DependentUpon>
+    <Compile Include="GUI\LichKham.Designer.cs">
+      <DependentUpon>LichKham.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\LSKCB.cs">
+    <Compile Include="GUI\LichSuKhamChuaBenh.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\LSKCB.Designer.cs">
-      <DependentUpon>LSKCB.cs</DependentUpon>
+    <Compile Include="GUI\LichSuKhamChuaBenh.Designer.cs">
+      <DependentUpon>LichSuKhamChuaBenh.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\QLBG.cs">
+    <Compile Include="GUI\QuanLy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\QuanLy.Designer.cs">
+      <DependentUpon>QuanLy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QuanLiHoSoBenhhan.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\QLBG.Designer.cs">
-      <DependentUpon>QLBG.cs</DependentUpon>
+    <Compile Include="GUI\QuanLiHoSoBenhhan.Designer.cs">
+      <DependentUpon>QuanLiHoSoBenhhan.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Quanli.cs">
+    <Compile Include="GUI\ThanhToan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\Quanli.Designer.cs">
-      <DependentUpon>Quanli.cs</DependentUpon>
+    <Compile Include="GUI\ThanhToan.Designer.cs">
+      <DependentUpon>ThanhToan.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\QuanLiHosobenhnhan.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GUI\QuanLiHosobenhnhan.Designer.cs">
-      <DependentUpon>QuanLiHosobenhnhan.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Thanhtoan.cs">
+    <Compile Include="GUI\ThemBenhNhan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\Thanhtoan.Designer.cs">
-      <DependentUpon>Thanhtoan.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Thembenhnhan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\Thembenhnhan.Designer.cs">
-      <DependentUpon>Thembenhnhan.cs</DependentUpon>
+    <Compile Include="GUI\ThemBenhNhan.Designer.cs">
+      <DependentUpon>ThemBenhNhan.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="GUI\Bacsi.resx">
-      <DependentUpon>Bacsi.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\BacSi.resx">
+      <DependentUpon>BacSi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Baocaocv.resx">
-      <DependentUpon>Baocaocv.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\BaoCaoCongViec.resx">
+      <DependentUpon>BaoCaoCongViec.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\BCTH.resx">
-      <DependentUpon>BCTH.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\BaoCaoTongHop.resx">
+      <DependentUpon>BaoCaoTongHop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\DangKy.resx">
       <DependentUpon>DangKy.cs</DependentUpon>
@@ -187,38 +192,38 @@
     <EmbeddedResource Include="GUI\DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\donthuoc.resx">
-      <DependentUpon>donthuoc.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\DonThuoc.resx">
+      <DependentUpon>DonThuoc.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\DVdk.resx">
-      <DependentUpon>DVdk.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\DichVuDaKe.resx">
+      <DependentUpon>DichVuDaKe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\kls.resx">
-      <DependentUpon>kls.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\DuLieuDiemDanh.resx">
+      <DependentUpon>DuLieuDiemDanh.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Letan.resx">
-      <DependentUpon>Letan.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\KhamLamSang.resx">
+      <DependentUpon>KhamLamSang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Lichkham.resx">
-      <DependentUpon>Lichkham.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\LeTan.resx">
+      <DependentUpon>LeTan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\LSKCB.resx">
-      <DependentUpon>LSKCB.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\LichKham.resx">
+      <DependentUpon>LichKham.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\QLBG.resx">
-      <DependentUpon>QLBG.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\LichSuKhamChuaBenh.resx">
+      <DependentUpon>LichSuKhamChuaBenh.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Quanli.resx">
-      <DependentUpon>Quanli.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\QuanLy.resx">
+      <DependentUpon>QuanLy.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\QuanLiHosobenhnhan.resx">
-      <DependentUpon>QuanLiHosobenhnhan.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\QuanLiHoSoBenhhan.resx">
+      <DependentUpon>QuanLiHoSoBenhhan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Thanhtoan.resx">
-      <DependentUpon>Thanhtoan.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\ThanhToan.resx">
+      <DependentUpon>ThanhToan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Thembenhnhan.resx">
-      <DependentUpon>Thembenhnhan.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\ThemBenhNhan.resx">
+      <DependentUpon>ThemBenhNhan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -230,16 +235,16 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="DBQuanLyPhongKhamDataSet.xsc">
-      <DependentUpon>DBQuanLyPhongKhamDataSet.xsd</DependentUpon>
+    <None Include="DatabaseDataSet.xsc">
+      <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
     </None>
-    <None Include="DBQuanLyPhongKhamDataSet.xsd">
+    <None Include="DatabaseDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DBQuanLyPhongKhamDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>DatabaseDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="DBQuanLyPhongKhamDataSet.xss">
-      <DependentUpon>DBQuanLyPhongKhamDataSet.xsd</DependentUpon>
+    <None Include="DatabaseDataSet.xss">
+      <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -276,17 +281,17 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DBQuanLyPhongKham.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DBQuanLyPhongKham_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>DBQuanLyPhongKham.mdf</DependentUpon>
-    </Content>
     <None Include="Resources\N9-NiceNight %281%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="RJControls\" />
+    <Content Include="Database.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database.mdf</DependentUpon>
+    </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

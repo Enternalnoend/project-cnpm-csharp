@@ -1,4 +1,6 @@
-﻿using System;
+﻿using QuanLyPhongKham.BLL;
+using QuanLyPhongKham.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,135 +10,57 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QuanLyPhongKham.GUI
-{
-    public partial class Bacsi : Form
-    {
-        public Bacsi()
-        {
+namespace QuanLyPhongKham.GUI {
+    public partial class BacSi : Form {
+        public BacSi() {
             InitializeComponent();
             kls1.BringToFront();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+        private void Bacsi_Load( object sender, EventArgs e ) {
+            List<PatientDTO> patientList = BacSiBLL.Instance.getAllPatients();
+            foreach (PatientDTO item in patientList) {
+                ListViewItem lvwItem = new ListViewItem(item.ID.ToString());
+                lvwItem.SubItems.Add(item.Name);
+                lvwItem.Tag = item;
+                lvwPatient.Items.Add(lvwItem);
+            }
         }
 
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Bacsi_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel9_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox10_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            dVdk1.BringToFront();
-        }
-
-        private void label15_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button14_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label18_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label17_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label14_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dVdk1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
+        private void button3_Click( object sender, EventArgs e ) {
             donthuoc1.BringToFront();
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
+        private void button1_Click( object sender, EventArgs e ) {
             kls1.BringToFront();
         }
 
-        private void button18_Click(object sender, EventArgs e)
-        {
+
+        private void lvwPatient_SelectedIndexChanged( object sender, EventArgs e ) {
+            if (lvwPatient.SelectedItems.Count > 0) {
+                PatientDTO patient = (lvwPatient.SelectedItems[0].Tag as PatientDTO);
+                tbxID.Text = patient.ID.ToString();
+                tbxCCCD.Text = patient.CCCD.ToString();
+                tbxBirthday.Text = patient.Birthday.ToString();
+                tbxAddress.Text = patient.Address.ToString();
+                tbxName.Text = patient.Name.ToString();
+                tbxPhoneNumber.Text = patient.PhoneNumber.ToString();
+                tbxSex.Text = patient.Sex.ToString();
+
+            }
+        }
+
+        private void button9_Click( object sender, EventArgs e ) {
 
         }
 
-        private void button22_Click(object sender, EventArgs e)
-        {
+        private void button10_Click( object sender, EventArgs e ) {
 
+        }
+
+        private void btnLogout_Click( object sender, EventArgs e ) {
+            this.Close();
         }
     }
 }
