@@ -76,6 +76,7 @@ namespace QuanLyPhongKham.GUI {
             this.Close();
         }
 
+<<<<<<< HEAD
 
         private void button9_Click(object sender, EventArgs e)
         {
@@ -96,6 +97,10 @@ namespace QuanLyPhongKham.GUI {
         private void quanLiBangGia1_Load(object sender, EventArgs e)
         {
 
+=======
+        private void btnQuanLyNhanVien_Click( object sender, EventArgs e ) {
+            quanLyNhanVien.BringToFront();
+>>>>>>> 28281cb8e320fa9a356631b2019cf1c8ea1788ae
         }
     }
 }
