@@ -17,6 +17,8 @@ namespace QuanLyPhongKham.GUI {
         }
 
         private void Quanliload( object sender, EventArgs e ) {
+            BaoCaoTongHop baoCaoTongHop = new BaoCaoTongHop();
+            baoCaoTongHop.BringToFront();
 
         }
 
@@ -72,6 +74,28 @@ namespace QuanLyPhongKham.GUI {
 
         private void btnLogout_Click( object sender, EventArgs e ) {
             this.Close();
+        }
+
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            BaoCaoTongHop baoCaoTongHop = new BaoCaoTongHop();
+            baoCaoTongHop.BringToFront();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void quanLiBangGia1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

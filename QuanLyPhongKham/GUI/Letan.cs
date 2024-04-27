@@ -68,5 +68,10 @@ namespace QuanLyPhongKham.GUI
         private void btnLogout_Click( object sender, EventArgs e ) {
             this.Close();
         }
+
+        private void quanLiHosobenhnhan1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

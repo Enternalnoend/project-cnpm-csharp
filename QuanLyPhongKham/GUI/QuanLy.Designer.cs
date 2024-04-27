@@ -50,8 +50,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.baocaocv1 = new QuanLyPhongKham.GUI.BaoCaoCongViec();
-            this.bcth1 = new QuanLyPhongKham.GUI.BaoCaoTongHop();
+            this.quanLiBangGia1 = new QuanLyPhongKham.GUI.QuanLiBangGia();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -119,6 +118,7 @@
             this.button12.TabIndex = 5;
             this.button12.Text = "Thêm nhân viên";
             this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // panel3
             // 
@@ -157,6 +157,7 @@
             this.button8.TabIndex = 3;
             this.button8.Text = "Báo cáo kho và Bán hàng";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
@@ -169,6 +170,7 @@
             this.button9.TabIndex = 2;
             this.button9.Text = "Báo cáo điểm danh";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // PanelDrop
             // 
@@ -304,23 +306,14 @@
             this.timer2.Interval = 15;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
-            // baocaocv1
+            // quanLiBangGia1
             // 
-            this.baocaocv1.Location = new System.Drawing.Point(279, 57);
-            this.baocaocv1.Margin = new System.Windows.Forms.Padding(5);
-            this.baocaocv1.Name = "baocaocv1";
-            this.baocaocv1.Size = new System.Drawing.Size(1539, 745);
-            this.baocaocv1.TabIndex = 3;
-            // 
-            // bcth1
-            // 
-            this.bcth1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bcth1.Location = new System.Drawing.Point(279, 57);
-            this.bcth1.Margin = new System.Windows.Forms.Padding(5);
-            this.bcth1.Name = "bcth1";
-            this.bcth1.Size = new System.Drawing.Size(1533, 745);
-            this.bcth1.TabIndex = 2;
-            this.bcth1.Load += new System.EventHandler(this.bcth1_Load);
+            this.quanLiBangGia1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.quanLiBangGia1.Location = new System.Drawing.Point(278, 76);
+            this.quanLiBangGia1.Name = "quanLiBangGia1";
+            this.quanLiBangGia1.Size = new System.Drawing.Size(1543, 745);
+            this.quanLiBangGia1.TabIndex = 2;
+            this.quanLiBangGia1.Load += new System.EventHandler(this.quanLiBangGia1_Load);
             // 
             // QuanLy
             // 
@@ -328,8 +321,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1819, 816);
-            this.Controls.Add(this.baocaocv1);
-            this.Controls.Add(this.bcth1);
+            this.Controls.Add(this.quanLiBangGia1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -367,8 +359,7 @@
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button btnLogout;
-        private BaoCaoTongHop bcth1;
-        private BaoCaoCongViec baocaocv1;
         private System.Windows.Forms.Button button12;
+        private QuanLiBangGia quanLiBangGia1;
     }
 }

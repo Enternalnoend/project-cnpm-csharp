@@ -156,6 +156,7 @@
             this.quanLiHosobenhnhan1.Name = "quanLiHosobenhnhan1";
             this.quanLiHosobenhnhan1.Size = new System.Drawing.Size(1313, 702);
             this.quanLiHosobenhnhan1.TabIndex = 8;
+            this.quanLiHosobenhnhan1.Load += new System.EventHandler(this.quanLiHosobenhnhan1_Load);
             // 
             // LeTan
             // 
