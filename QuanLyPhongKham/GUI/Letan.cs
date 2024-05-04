@@ -27,7 +27,6 @@ namespace QuanLyPhongKham.GUI {
 
         private void btnQuanLyHoSoBenhNhan_Click( object sender, EventArgs e ) {
             quanLyHoSoBenhNhan.BringToFront();
-
         }
     }
 }

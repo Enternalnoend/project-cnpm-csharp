@@ -49,6 +49,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.quanLiBangGia1 = new QuanLyPhongKham.GUI.QuanLiBangGia();
             this.baocaocv1 = new QuanLyPhongKham.GUI.BaoCaoCongViec();
             this.bcth1 = new QuanLyPhongKham.GUI.BaoCaoTongHop();
             this.quanLyNhanVien = new QuanLyPhongKham.GUI.QuanLyNhanVien();
@@ -107,6 +108,19 @@
             this.panel2.Size = new System.Drawing.Size(271, 725);
             this.panel2.TabIndex = 1;
             // 
+            // button12
+            // 
+            this.button12.BackColor = System.Drawing.Color.DarkGray;
+            this.button12.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button12.Location = new System.Drawing.Point(13, 522);
+            this.button12.Margin = new System.Windows.Forms.Padding(0);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(244, 69);
+            this.button12.TabIndex = 5;
+            this.button12.Text = "Thêm nhân viên";
+            this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.button4);
@@ -144,6 +158,7 @@
             this.button8.TabIndex = 3;
             this.button8.Text = "Báo cáo kho và Bán hàng";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
@@ -156,6 +171,7 @@
             this.button9.TabIndex = 2;
             this.button9.Text = "Báo cáo điểm danh";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // PanelDrop
             // 
@@ -292,8 +308,14 @@
             this.timer2.Interval = 15;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
-            // baocaocv1
+            // quanLiBangGia1
             // 
+            this.quanLiBangGia1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.quanLiBangGia1.Location = new System.Drawing.Point(278, 76);
+            this.quanLiBangGia1.Name = "quanLiBangGia1";
+            this.quanLiBangGia1.Size = new System.Drawing.Size(1543, 745);
+            this.quanLiBangGia1.TabIndex = 2;
+            this.quanLiBangGia1.Load += new System.EventHandler(this.quanLiBangGia1_Load);
             this.baocaocv1.Location = new System.Drawing.Point(280, 57);
             this.baocaocv1.Margin = new System.Windows.Forms.Padding(5);
             this.baocaocv1.Name = "baocaocv1";
@@ -302,7 +324,7 @@
             // 
             // bcth1
             // 
-            this.bcth1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bcth1.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (128)))), ((int) (((byte) (255)))), ((int) (((byte) (255)))));
             this.bcth1.Location = new System.Drawing.Point(279, 57);
             this.bcth1.Margin = new System.Windows.Forms.Padding(5);
             this.bcth1.Name = "bcth1";
@@ -323,6 +345,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1819, 816);
+            this.Controls.Add(this.quanLiBangGia1);
             this.Controls.Add(this.quanLyNhanVien);
             this.Controls.Add(this.baocaocv1);
             this.Controls.Add(this.bcth1);
@@ -363,6 +386,8 @@
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Button button12;
+        private QuanLiBangGia quanLiBangGia1;
         private BaoCaoTongHop bcth1;
         private BaoCaoCongViec baocaocv1;
         private QuanLyNhanVien quanLyNhanVien;

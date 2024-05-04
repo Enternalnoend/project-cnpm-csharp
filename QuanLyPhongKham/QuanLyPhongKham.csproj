@@ -76,6 +76,10 @@
     <Compile Include="DAO\EmployeeDAO.cs" />
     <Compile Include="DAO\PatientDAO.cs" />
     <Compile Include="DAO\PositionDAO.cs" />
+
+    <Compile Include="DAO\ServiceDAO.cs" />
+    <Compile Include="DAO\testDAO.cs" />
+
     <Compile Include="DAO\RoomDAO.cs" />
     <Compile Include="DAO\ScheduleDAO.cs" />
     <Compile Include="DAO\TreatmentNeedsDAO.cs" />
@@ -164,6 +168,12 @@
     <Compile Include="GUI\LichSuKhamChuaBenh.Designer.cs">
       <DependentUpon>LichSuKhamChuaBenh.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\QuanLiBangGia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\QuanLiBangGia.Designer.cs">
+      <DependentUpon>QuanLiBangGia.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\QuanLy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -193,6 +203,12 @@
     </Compile>
     <Compile Include="GUI\ThemBenhNhan.Designer.cs">
       <DependentUpon>ThemBenhNhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Themdv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Themdv.Designer.cs">
+      <DependentUpon>Themdv.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -232,6 +248,9 @@
     <EmbeddedResource Include="GUI\LichSuKhamChuaBenh.resx">
       <DependentUpon>LichSuKhamChuaBenh.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QuanLiBangGia.resx">
+      <DependentUpon>QuanLiBangGia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\QuanLy.resx">
       <DependentUpon>QuanLy.cs</DependentUpon>
     </EmbeddedResource>
@@ -246,6 +265,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\ThemBenhNhan.resx">
       <DependentUpon>ThemBenhNhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Themdv.resx">
+      <DependentUpon>Themdv.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
