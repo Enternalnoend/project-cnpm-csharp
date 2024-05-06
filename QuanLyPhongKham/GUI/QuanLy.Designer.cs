@@ -107,22 +107,6 @@
             this.panel2.Size = new System.Drawing.Size(271, 725);
             this.panel2.TabIndex = 1;
             // 
-<<<<<<< HEAD
-=======
-            // button12
-            // 
-           
-            this.button12.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button12.Location = new System.Drawing.Point(13, 522);
-            this.button12.Margin = new System.Windows.Forms.Padding(0);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(244, 69);
-            this.button12.TabIndex = 5;
-            this.button12.Text = "Thêm nhân viên";
-            this.button12.UseVisualStyleBackColor = false;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
-            // 
->>>>>>> 7f23b08b241a9a16a41fa200b6a23883b71da3f6
             // panel3
             // 
             this.panel3.Controls.Add(this.button4);
