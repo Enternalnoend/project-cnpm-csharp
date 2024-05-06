@@ -110,7 +110,7 @@
             // 
             // button12
             // 
-            this.button12.BackColor = System.Drawing.Color.DarkGray;
+           
             this.button12.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button12.Location = new System.Drawing.Point(13, 522);
             this.button12.Margin = new System.Windows.Forms.Padding(0);
