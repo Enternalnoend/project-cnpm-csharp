@@ -72,11 +72,11 @@ namespace QuanLyPhongKham.GUI {
             this.Show();
         }
 
-
-
-
-
-
-
+        private void tbxPhoneNumber_KeyPress( object sender, KeyPressEventArgs e ) {
+            if (e.KeyChar == (char) Keys.Enter) {
+                e.Handled = true;
+                tbxPassword.Focus();
+            }
+        }
     }
 }
