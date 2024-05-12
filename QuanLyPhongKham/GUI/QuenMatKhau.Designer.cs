@@ -34,6 +34,7 @@
             this.btnChangePass = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblError = new System.Windows.Forms.Label();
+            this.btnSend = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -106,7 +107,7 @@
             // 
             // btnChangePass
             // 
-            this.btnChangePass.Location = new System.Drawing.Point(116, 198);
+            this.btnChangePass.Location = new System.Drawing.Point(121, 242);
             this.btnChangePass.Name = "btnChangePass";
             this.btnChangePass.Size = new System.Drawing.Size(133, 23);
             this.btnChangePass.TabIndex = 18;
@@ -120,6 +121,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.lblError);
+            this.panel1.Controls.Add(this.btnSend);
             this.panel1.Controls.Add(this.tbxID);
             this.panel1.Controls.Add(this.btnChangePass);
             this.panel1.Controls.Add(this.tbxEmail);
@@ -131,24 +133,35 @@
             this.panel1.Controls.Add(this.tbxNewPass);
             this.panel1.Location = new System.Drawing.Point(62, 50);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(393, 247);
+            this.panel1.Size = new System.Drawing.Size(382, 283);
             this.panel1.TabIndex = 19;
             // 
             // lblError
             // 
             this.lblError.AutoSize = true;
             this.lblError.ForeColor = System.Drawing.Color.Red;
-            this.lblError.Location = new System.Drawing.Point(161, 163);
+            this.lblError.Location = new System.Drawing.Point(161, 194);
             this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(0, 16);
-            this.lblError.TabIndex = 19;
+            this.lblError.Size = new System.Drawing.Size(50, 16);
+            this.lblError.TabIndex = 21;
+            this.lblError.Text = "lblError";
             this.lblError.Visible = false;
+            // 
+            // btnSend
+            // 
+            this.btnSend.Location = new System.Drawing.Point(258, 163);
+            this.btnSend.Name = "btnSend";
+            this.btnSend.Size = new System.Drawing.Size(75, 23);
+            this.btnSend.TabIndex = 20;
+            this.btnSend.Text = "button1";
+            this.btnSend.UseVisualStyleBackColor = true;
+            this.btnSend.Click += new System.EventHandler(this.btnSendOTP_Click);
             // 
             // QuenMatKhau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(536, 298);
+            this.ClientSize = new System.Drawing.Size(525, 334);
             this.Controls.Add(this.panel1);
             this.MaximizeBox = false;
             this.Name = "QuenMatKhau";
@@ -173,5 +186,6 @@
         private System.Windows.Forms.Button btnChangePass;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblError;
+        private System.Windows.Forms.Button btnSend;
     }
 }
