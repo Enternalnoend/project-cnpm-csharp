@@ -30,7 +30,9 @@ namespace QuanLyPhongKham.GUI {
             string password = "nodj pwul icvu clvr";
             MailMessage mail = new MailMessage(senderMail, receiverMail);
             mail.Subject = "OTP XÁC NHẬN ĐỔI MẬT KHẨU PHÒNG KHÁM";
-            mail.Body = "Mã OTP của bạn là:" + randomOTP() + "\nVui lòng không chia sẻ email này với người khác.";
+            string OTP = randomOTP();
+            tbxOTP.Tag = OTP;
+            mail.Body = "Mã OTP của bạn là:" + OTP + "\nVui lòng không chia sẻ email này với người khác.";
             try {
                 SmtpClient send = new SmtpClient("smtp.gmail.com");
                 send.Port = 587;
@@ -85,6 +87,10 @@ namespace QuanLyPhongKham.GUI {
         private void btnChangePass_Click( object sender, EventArgs e ) {
             if(tbxID.Text == "" || tbxEmail.Text == "" || tbxNewPass.Text == "" || tbxConfirmPass.Text == "") {
                 MessageBox.Show("Vui lòng điền đầy đủ thông tin");
+                return;
+            }
+            if(tbxOTP.Text != tbxOTP.Tag.ToString()) {
+                MessageBox.Show("Mã OTP không chính xác");
                 return;
             }
             if (EmployeeDAO.Instance.changePassword(int.Parse(tbxID.Text), tbxNewPass.Text) == 1) {

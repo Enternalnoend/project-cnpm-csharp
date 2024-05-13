@@ -98,10 +98,10 @@ namespace QuanLyPhongKham.GUI
             this.lblForgetPassword.LinkColor = System.Drawing.Color.Transparent;
             this.lblForgetPassword.Location = new System.Drawing.Point(819, 256);
             this.lblForgetPassword.Name = "lblForgetPassword";
-            this.lblForgetPassword.Size = new System.Drawing.Size(123, 18);
+            this.lblForgetPassword.Size = new System.Drawing.Size(215, 18);
             this.lblForgetPassword.TabIndex = 13;
             this.lblForgetPassword.TabStop = true;
-            this.lblForgetPassword.Text = "Quên Mật Khẩu ?";
+            this.lblForgetPassword.Text = "Quên Mật Khẩu ?/Đổi mật khẩu";
             this.lblForgetPassword.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblForgetPassword_LinkClicked);
             // 
             // cbkShowPassword
@@ -183,6 +183,7 @@ namespace QuanLyPhongKham.GUI
             this.Controls.Add(this.pnlContainer);
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
             this.Name = "DangNhap";
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Form1_Load);

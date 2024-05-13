@@ -11,76 +11,62 @@ using System.Windows.Forms;
 
 namespace QuanLyPhongKham.GUI {
     public partial class QuanLy : Form {
-        private bool isCollapsed;
         public QuanLy() {
             InitializeComponent();
         }
 
         private void Quanliload( object sender, EventArgs e ) {
-
+            quanLyNhanVien.BringToFront();
+            btnQuanLyNhanVien.BackColor = System.Drawing.Color.Lime;
         }
 
-        private void timer1_Tick( object sender, EventArgs e ) {
-            if (isCollapsed) {
-                PanelDrop.Height += 10;
-                if (PanelDrop.Size == PanelDrop.MaximumSize) {
-                    timer1.Stop();
-                    isCollapsed = false;
-                }
-            }
-            else {
-                PanelDrop.Height -= 10;
-                if (PanelDrop.Size == PanelDrop.MinimumSize) {
-                    timer1.Stop();
-                    isCollapsed = true;
-                }
-
-            }
+        private void resetColorButton() {
+            btnBaoCaoDanhThu.BackColor = System.Drawing.Color.WhiteSmoke;
+            btnDuLieuDiemDanh.BackColor = System.Drawing.Color.WhiteSmoke;
+            btnQuanLyNhanVien.BackColor = System.Drawing.Color.WhiteSmoke;
+            btnKhoThuoc.BackColor = System.Drawing.Color.WhiteSmoke;
+            btnQuanLyBangGia.BackColor = System.Drawing.Color.WhiteSmoke;
         }
-
-        private void dropbutton_Click( object sender, EventArgs e ) {
-            timer1.Start();
-        }
-
-
-        private void buttonql_Click( object sender, EventArgs e ) {
-            timer2.Start();
-        }
-
-        private void timer2_Tick( object sender, EventArgs e ) {
-
-            if (isCollapsed) {
-                panel3.Height += 10;
-                if (panel3.Size == panel3.MaximumSize) {
-                    timer2.Stop();
-                    isCollapsed = false;
-                }
-            }
-            else {
-                panel3.Height -= 10;
-                if (panel3.Size == panel3.MinimumSize) {
-                    timer2.Stop();
-                    isCollapsed = true;
-                }
-
-            }
-        }
-
-        private void bcth1_Load( object sender, EventArgs e ) {
-
-        }
-
         private void btnLogout_Click( object sender, EventArgs e ) {
             this.Close();
         }
 
         private void btnQuanLyNhanVien_Click( object sender, EventArgs e ) {
             quanLyNhanVien.BringToFront();
+            resetColorButton();
+            btnQuanLyNhanVien.BackColor = System.Drawing.Color.Lime;
         }
 
 
         private void btnDuLieuDiemDanh_Click( object sender, EventArgs e ) {
             duLieuDiemDanh.BringToFront();
+            resetColorButton();
+            btnDuLieuDiemDanh.BackColor = System.Drawing.Color.Lime;
+        }
+
+
+        private void btnQuanLyBangGia_Click( object sender, EventArgs e ) {
+            quanLyBangGia.BringToFront();
+            quanLyBangGia.reload();
+            resetColorButton();
+            btnQuanLyBangGia.BackColor = System.Drawing.Color.Lime;
+        }
+
+        private void btnKhoThuoc_Click( object sender, EventArgs e ) {
+            khoThuoc.BringToFront();
+            khoThuoc.reload();
+            resetColorButton();
+            btnKhoThuoc.BackColor = System.Drawing.Color.Lime;
+        }
+
+        private void btnBaoCaoDanhThu_Click( object sender, EventArgs e ) {
+            baoCaoDanhThu.BringToFront();
+            resetColorButton();
+            btnBaoCaoDanhThu.BackColor = System.Drawing.Color.Lime;
+        }
+
+        private void label13_Click( object sender, EventArgs e ) {
+
         }
     }
 }
